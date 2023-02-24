@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.fan {
+  max-height: 400px;
+  border: 1px black solid;
+  margin: 2rem;
+}
+
+#legs {
+  animation: slide 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+
+@keyframes slide {
+  from {
+    transform: scaleY(1.0);
+  }
+  to {
+    transform: scaleY(1.2)
+  }
+}
+
+#body {
+  animation: torso 1s ease-in-out infinite alternate;
+  transform-origin: top;
+}
+
+@keyframes torso {
+  from {
+    transform: translateY(0rem);
+  }
+  to {
+    transform: translateY(-0.5rem);
+  }
+}
